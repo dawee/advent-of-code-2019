@@ -25,7 +25,7 @@ let sum_fuel = Array.fold_left((fuel, mdl) => fuel + get_mdl_fuel(mdl), 0);
  * Run with input
  */
 
-let input = [|
+[|
   103910,
   133712,
   82560,
@@ -126,6 +126,6 @@ let input = [|
   75633,
   117361,
   82295,
-|];
-
-sum_fuel(input) |> Console.log;
+|]
+|> sum_fuel
+|> Console.log;
